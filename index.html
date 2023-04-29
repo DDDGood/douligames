@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Runai</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <section class="visual">
+        <img src="images/Visual_Runai.png">
+    </section>
+
+    <section class="intro">
+        <h1>Runai</h1>
+        <!-- <p>Runai is a pixel-style sandbox game.</p> -->
+        <p> Embark on an adventure with your animal companions and build a thriving community in a procedurally
+            generated wasteland world in Runai, the pixel-style sandbox game.</p>
+    </section>
+
+    <section class="trailer">
+        <h1>Trailer</h1>
+        <iframe src="https://www.youtube.com/embed/xjlM0m_N_aA" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    </section>
+
+    <section class="Gameplay">
+        <div class="gameplay-block">
+            <div class="gameplay-info">
+                <h2>Build Your Village</h2>
+                <p>Build your own village and recruit cute animal villagers to create a thriving community in the
+                    wasteland. Keep your villagers happy and satisfied by meeting their needs and watch them work
+                    hard for you in return.</p>
+            </div>
+            <img src="images/build2.gif" alt="Your GIF">
+        </div>
+        <div class="gameplay-block">
+            <div class="gameplay-info">
+                <h2>Explore the Wasteland</h2>
+                <p>Explore the ruins with your animal companions and collect resources and rare equipment and
+                    furniture to help with village building.</p>
+            </div>
+            <img src="images/fight.gif" alt="Your GIF">
+        </div>
+        <div class="gameplay-block">
+            <div class="gameplay-info">
+                <h2>Boss Battles</h2>
+                <p>Fight powerful mutant bosses with your hard-earned companions and collect special loot that's
+                    crucial for advancing the game.</p>
+            </div>
+            <img src="images/boss.gif" alt="Your GIF">
+        </div>
+        <div class="gameplay-block">
+            <div class="gameplay-info">
+                <h2>Upgrade Your Village</h2>
+                <p>Upgrade your village to expand the adventure area, recruit special companions, and unlock new
+                    buildings through research. <br> The possibilities are endless in Runai!</p>
+            </div>
+            <img src="images/update.gif" alt="Your GIF">
+        </div>
+    </section>
+
+    <section class="feature-1">
+        <div class="feature-text">
+            <div class="shadow-box">
+                <h2>Explore a Rich World</h2>
+                <p>Explore a procedually generated world, featuring 8 different natural biomes, mutated areas
+                    affected by pollution, and ruins of towns. Visit different faction bases to trade, and find
+                    the lairs of bosses to defeat them.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="feature-2">
+        <div class="feature-text">
+            <div class="shadow-box">
+                <h2>Meet Animal Companions</h2>
+                <p>Encounter a variety of animal companions on your journey, and recruit them to your village. They
+                    possess different abilities, some skilled in combat while others in handicraft or cooking,
+                    allowing you to utilize their talents or train them in new skills.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="team">
+        <h1>About Me</h1>
+        <div class="team-flex">
+            <div class="team-flex-image"><img src="images/me.png" alt="Me"></div>
+            <div class="team-flex-text">
+                <p>Sammy Hsu</p>
+                <p> I'm the indie game developer behind Runai! Originally from Taiwan, I have a deep love for
+                    all
+                    things
+                    gaming, both on screen and on the table. At present, I'm fully committed to working on the
+                    development of Runai full-time, striving to bring my vision for the game to life.</p>
+                <p>Contact: <a href="mailto:forever9409@gmail.com">forever9409@gmail.com</a></p>
+
+            </div>
+            <!-- <ul>
+                    <li>Sammy Hsu - Game designer, Programmer, Pixel artist.</li>
+                    <li>Christine Yeh - Product manager, UIUX designer.</li>
+                </ul> -->
+        </div>
+    </section>
+
+
+    <script>
+        // const sections = document.querySelectorAll("section");
+
+        // // 監聽滾動事件
+        // window.addEventListener("scroll", () => {
+        //     // 獲取當前滾動位置
+        //     const scrollPosition = window.scrollY;
+
+        //     // 計算當前在哪個 section 元素中
+        //     const currentSectionIndex = Math.floor(scrollPosition / window.innerHeight);
+
+        //     // 設置 wrapper 元素的 top 屬性，從而實現滾動效果
+        //     const wrapper = document.querySelector(".wrapper");
+        //     wrapper.style.top = `-${currentSectionIndex * 100}vh`;
+        // });
+
+        function myFunction(id) {
+            var f1 = document.getElementById("feature1");
+            var f2 = document.getElementById("feature2");
+            var f3 = document.getElementById("feature3");
+            var f4 = document.getElementById("feature4");
+
+            // 只顯示選擇的 feature
+            if (id == "feature1") {
+                f1.style.display = "flex";
+                f2.style.display = "none";
+                f3.style.display = "none";
+                f4.style.display = "none";
+                // replay the video under feature1
+                f1.load();
+            } else if (id == "feature2") {
+                f1.style.display = "none";
+                f2.style.display = "flex";
+                f3.style.display = "none";
+                f4.style.display = "none";
+                f2.load;
+            } else if (id == "feature3") {
+                f1.style.display = "none";
+                f2.style.display = "none";
+                f3.style.display = "flex";
+                f4.style.display = "none";
+                f3.load;
+            } else if (id == "feature4") {
+                f1.style.display = "none";
+                f2.style.display = "none";
+                f3.style.display = "none";
+                f4.style.display = "flex";
+                f4.load;
+            }
+        }
+    </script>
+</body>
+
+</html>
